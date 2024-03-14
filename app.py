@@ -14,3 +14,11 @@ def block8(floor):
 @app.route("/block9/<int:floor>")
 def block9(floor):
     return render_template("block9.html")
+
+@app.route("/block10")
+def block10():
+    return render_template("block10.html")
+
+@app.route("/daskalo")
+def daskalo():
+    return render_template("daskalo.html")
