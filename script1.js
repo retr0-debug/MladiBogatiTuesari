@@ -21,6 +21,8 @@ const teacherRoomicon = L.icon({
     iconSize: [40, 40]
 });
 
+
+
 const marker2 = L.marker([54.85, 0.3], {
     icon: teacherRoomicon
 }).addTo(map);
@@ -49,6 +51,10 @@ const marker4 = L.marker([55.15, 12.05], {
     icon: rectangle
 }).addTo(map);
 marker4.bindTooltip("9205");
+
+
+marker4.bindPopup("9205 popup");
+
 
 //=====================================================================
 const rectangle2 = L.icon({
@@ -141,6 +147,7 @@ const marker13 = L.marker([54.53 , 0.94], {
     icon: rectangle10
 }).addTo(map);
 marker13.bindTooltip("9202");
+
 
 
 
