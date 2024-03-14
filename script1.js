@@ -1,5 +1,5 @@
 var map = L.map('map', {
-    minZoom: 5,
+    minZoom: 6,
     maxZoom: 7,
     scrollWheelZoom: true,
     setZoom: 5, 
@@ -71,6 +71,37 @@ const marker6 = L.marker([51.33, 14.20], {
     icon: rectangle3
 }).addTo(map);
 marker6.bindTooltip("9221");
+//===========================================================================
+const rectangle4 = L.icon({
+    iconUrl: 'https://img.icons8.com/pulsar-line/48/rounded-rectangle.png',
+    iconSize: [43, 100]
+});
+
+const marker7 = L.marker([51.33, 12.35], {
+    icon: rectangle4
+}).addTo(map);
+marker7.bindTooltip("9223");
+//=========================================================================
+const rectangle5 = L.icon({
+    iconUrl: 'https://img.icons8.com/pulsar-line/48/rounded-rectangle.png',
+    iconSize: [43, 100]
+});
+
+const marker8 = L.marker([52.74 , 14.8], {
+    icon: rectangle5
+}).addTo(map);
+marker8.bindTooltip("9217");
+//=======================================================================
+const rectangle6 = L.icon({
+    iconUrl: 'https://img.icons8.com/pulsar-line/48/rounded-rectangle.png',
+    iconSize: [43, 100]
+});
+
+const marker9 = L.marker([52.74 , 14.8], {
+    icon: rectangle6
+}).addTo(map);
+marker9.bindTooltip("9217");
+
 
 var osm = L.imageOverlay('devetiblok_vtori.png', [[57, -0.99], [50, 16]]);
 osm.addTo(map);
