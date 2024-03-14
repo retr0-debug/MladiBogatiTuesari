@@ -52,7 +52,6 @@ const marker4 = L.marker([55.15, 12.05], {
 }).addTo(map);
 marker4.bindTooltip("9205");
 
-
 marker4.bindPopup("9205 popup");
 
 
