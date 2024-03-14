@@ -39,7 +39,7 @@ const marker3 = L.marker([54.7, 6.9], {
 marker3.bindTooltip("Point of interest");
 
 //======================================================================
-//==============================================================
+
 const rectangle = L.icon({
     iconUrl: 'https://img.icons8.com/pulsar-line/48/rounded-rectangle.png',
     iconSize: [43, 100]
@@ -101,6 +101,47 @@ const marker9 = L.marker([52.74 , 14.8], {
     icon: rectangle6
 }).addTo(map);
 marker9.bindTooltip("9217");
+//===========================================================================
+const rectangle7 = L.icon({
+    iconUrl: 'https://img.icons8.com/pulsar-line/48/rounded-rectangle.png',
+    iconSize: [43, 100]
+});
+
+const marker10 = L.marker([54.53 , 9.87], {
+    icon: rectangle7
+}).addTo(map);
+marker10.bindTooltip("9224");
+//=============================================================================
+const rectangle8 = L.icon({
+    iconUrl: 'https://img.icons8.com/pulsar-line/48/rounded-rectangle.png',
+    iconSize: [43, 100]
+});
+
+const marker11 = L.marker([54.53 , 7.87], {
+    icon: rectangle8
+}).addTo(map);
+marker11.bindTooltip("9222");
+//==========================================================================
+const rectangle9 = L.icon({
+    iconUrl: 'https://img.icons8.com/pulsar-line/48/rounded-rectangle.png',
+    iconSize: [43, 100]
+});
+
+const marker12 = L.marker([54.53 , 6.25], {
+    icon: rectangle9
+}).addTo(map);
+marker12.bindTooltip("9218");
+//============================================================================
+const rectangle10 = L.icon({
+    iconUrl: 'https://img.icons8.com/pulsar-line/48/rounded-rectangle.png',
+    iconSize: [43, 100]
+});
+
+const marker13 = L.marker([54.53 , 0.94], {
+    icon: rectangle10
+}).addTo(map);
+marker13.bindTooltip("9202");
+
 
 
 var osm = L.imageOverlay('devetiblok_vtori.png', [[57, -0.99], [50, 16]]);
