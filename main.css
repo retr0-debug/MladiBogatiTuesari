@@ -213,7 +213,7 @@ input[type="submit"]:hover {
         width: 80vw;
     }
 }
-@media (min-width: 100px) and (max-width: 1024px) {
+@media (min-width: 100px) and (max-width: 1224px) {
     h1 {
         left: 51px;
         font-size: 42px;
