@@ -1,9 +1,10 @@
 body {
-    background-color: #0A1F3B; 
+    background-color: #000000; 
     font-family: 'Open Sans', sans-serif;
-    color: white; 
+    color: rgb(56, 43, 169); 
     margin: 0;
     padding: 0;
+    text-shadow: 2px 2px 41px #362dab;
 }
 
 h1 {
@@ -44,7 +45,7 @@ input[type="submit"] {
 .footer a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 100px 10px;
 }
 
 .footer a:hover {
@@ -70,4 +71,8 @@ input[type="submit"] {
 #map {
     width: 50vw;
     height: 50vh;
+}
+
+title{
+    bottom:250px;
 }
