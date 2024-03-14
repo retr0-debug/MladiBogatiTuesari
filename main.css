@@ -66,3 +66,8 @@ input[type="submit"] {
     background-color: white;
     color: #0A1F3B;
 }
+
+#map {
+    width: 50vw;
+    height: 50vh;
+}
