@@ -1,33 +1,33 @@
 body {
-    background-color: #0A1F3B; /* Смяна на цвета на фона */
+    background-color: #0A1F3B; 
     font-family: 'Open Sans', sans-serif;
-    color: white; /* Бели букви за текста */
+    color: white; 
     margin: 0;
     padding: 0;
 }
 
 h1 {
-    text-align: center; /* Заглавният текст да е в средата */
-    margin-top: 50px; /* Отместване на заглавния текст нагоре */
+    text-align: center; 
+    margin-top: 50px; 
 }
 
 .button-container {
-    text-align: center; /* Центриране на бутоните */
+    text-align: center; 
     margin-top: 20px;
 }
 
 input[type="submit"] {
-    color: white; /* Бели букви за текста на бутоните */
-    background-color: transparent; /* Прозрачен фон */
-    border: 1px solid white; /* Бяла рамка */
+    color: white; 
+    background-color: transparent; 
+    border: 1px solid white; 
     padding: 10px 20px;
     margin-right: 10px;
     cursor: pointer;
 }
 
 .input[type="submit"]:hover {
-    background-color: white; /* Промяна на цвета на фона при ховър */
-    color: #0A1F3B; /* Промяна на цвета на текста при ховър */
+    background-color: white; 
+    color: #0A1F3B; 
 }
 
 .footer {
@@ -35,10 +35,10 @@ input[type="submit"] {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #0A1F3B; /* Смяна на цвета на фона в долната част */
+    background-color: #0A1F3B; 
     padding: 10px;
     text-align: center;
-    border-top: 15px solid black; /* Добавяне на черна линия в горната част на сайта */
+    border-top: 15px solid black; 
 }
 
 .footer a {
