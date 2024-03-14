@@ -162,5 +162,6 @@ input[type="submit"]:hover {
 #map {
     height: 50vh;
     width: 50vw;
-    margin-left: 100px;
+    margin-left: 350px;
+    margin-top: 150px;
 }
