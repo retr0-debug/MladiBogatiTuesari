@@ -158,3 +158,8 @@ input[type="submit"]:hover {
 .footer a:hover {
     color: #6fb7fe;
 }
+
+#map {
+    height: 100vh;
+    width: 100vw;
+}
