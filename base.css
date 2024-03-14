@@ -1,0 +1,45 @@
+h1 {
+    font-family: 'Arial', serif;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999; 
+    color: #d1d1d1;
+    text-shadow: 2px 2px 41px #ffffff;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    font-size: 62px;
+}
+
+h1#start {
+    top: 20px; 
+    right: 20px; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.footer {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.footer a {
+    color: #ffffff;
+    text-shadow: 2px 2px 41px #ffffff;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #6fb7fe;
+}
