@@ -3,6 +3,17 @@ var map = L.map('map', {
     maxZoom: 7,
     scrollWheelZoom: true 
   }).setView([54.5, 4.6], 6);
+
+
+var markerStyle = `
+<style>
+    .popup-image {
+        max-width: 100%;
+        height: 190px;
+        display: block;
+        margin: 4px auto; 
+    }
+</style>`
 //==========================================================
 const toiletIcon = L.icon({
     iconUrl: 'https://img.icons8.com/ios-filled/50/toilet.png',
@@ -30,9 +41,10 @@ marker2.bindTooltip("Teacher's Room");
 var marker2pop = `<b>Учителска стая:</b><br>
 Не ти се иска да ходиш там.
 Вътре има ключ за всяка стая (прави каквото искаш с тази информация).
+<img src="roomImg/teachersRoom.jpg" class="popup-image  ">
 `
 
-marker2.bindPopup(marker2pop);
+marker2.bindPopup(marker2pop + markerStyle);
 
 //======================================================================
 
@@ -50,8 +62,9 @@ var marker4pop = `<b>9205:</b><br>
 Нещо като зала за лекции.
 Главно за контролни по градивни елементи.
 На почти всеки чин има рисунки от ученици за ученици.
+<img src="roomImg/9205.jpg" class="popup-image">
 `
-marker4.bindPopup(marker4pop);
+marker4.bindPopup(marker4pop + markerStyle);
 
 //=====================================================================
 const rectangle2 = L.icon({
@@ -69,8 +82,9 @@ var marker5pop = `<b>9230:</b><br>
 Лявата редица е хубава, дясната не става.
 Вратата по някаква причина е най-отзад на стаята.
 Floor loot: JPG Le Beau, пречиствател на въздух, туба.
+<img src="roomImg/9230.jpg" class="popup-image">
 `
-marker5.bindPopup(marker5pop);
+marker5.bindPopup(marker5pop + markerStyle);
 
 //===========================================================================
 const rectangle3 = L.icon({
@@ -86,9 +100,10 @@ marker6.bindTooltip("9221");
 var marker6pop = `
 <b>9221:</b><br> 
 Голяма е и само това.
+<img src="roomImg/9221.jpg" class="popup-image">
 `
 
-marker6.bindPopup(marker6pop);
+marker6.bindPopup(marker6pop + markerStyle);
 //===========================================================================
 const rectangle4 = L.icon({
     iconUrl: 'https://img.icons8.com/pulsar-line/48/rounded-rectangle.png',
@@ -103,7 +118,10 @@ marker7.bindTooltip("9223");
 var marker7pop = `<b>9223:</b><br> 
 Голяма е.
 Като цяло става. 
+<img src="roomImg/9223.jpg" class="popup-image">
 `
+
+marker7.bindPopup(marker7pop + markerStyle)
 
 //=========================================================================
 const rectangle5 = L.icon({
@@ -118,7 +136,6 @@ marker8.bindTooltip("9217");
 
 var marker8pop = `
 <b>9217:</b><br> 
-Много е зле.
 Поне е слънчево.
 `
 marker8.bindPopup(marker8pop);
@@ -139,9 +156,10 @@ var marker10pop = `<b>9224:</b><br>
 Компютърна зала.
 Има 14 лаптопа и може би има 14 мишки и зарядни. 
 Има мултимедия и в хубав ден ще работи.
+<img src="roomImg/9224.jpg" class="popup-image">
 `
 
-marker10.bindPopup(marker10pop);
+marker10.bindPopup(marker10pop + markerStyle);
 //=============================================================================
 const rectangle8 = L.icon({
     iconUrl: 'https://img.icons8.com/pulsar-line/48/rounded-rectangle.png',
@@ -157,8 +175,9 @@ var marker11pop = `
 <b>9222:</b><br>
 Компютърна зала.
 Има около 14 лаптопа, но няма 14 мишки и зарядни.
+<img src="roomImg/9222.jpg" class="popup-image">
 `
-marker11.bindPopup(marker11pop);
+marker11.bindPopup(marker11pop + markerStyle);
 //==========================================================================
 const rectangle9 = L.icon({
     iconUrl: 'https://img.icons8.com/pulsar-line/48/rounded-rectangle.png',
@@ -171,10 +190,11 @@ const marker12 = L.marker([54.53 , 6.25], {
 marker12.bindTooltip("9218");
 
 var marker12pop = `<b>9218:</b><br> 
-Не става.
+Не е много добре.
+<img src="roomImg/9218.jpg" class="popup-image">
 `
 
-marker12.bindPopup(marker12pop);
+marker12.bindPopup(marker12pop + markerStyle);
 //============================================================================
 const rectangle10 = L.icon({
     iconUrl: 'https://img.icons8.com/pulsar-line/48/rounded-rectangle.png',
@@ -190,8 +210,9 @@ var marker13pop = `<b>9202</b><br>
 Голяма стая.
 Зелена е.
 Точно до учителската стая, за това не прави глупости.
+<img src="roomImg/9202.jpg" class="popup-image">
 `
-marker13.bindPopup(marker13pop);
+marker13.bindPopup(marker13pop + markerStyle);
 
 //===============================================================================
 const pointOfInterest = L.icon({
@@ -206,9 +227,10 @@ marker14.bindTooltip("Point of interest");
 
 var marker14pop = `<b>Random стълби в коридора:</b><br>
 Защо съществуват?
+<img src="roomImg/stairs.jpg" class="popup-image">
 `
 
-marker14.bindPopup(marker14pop);
+marker14.bindPopup(marker14pop + markerStyle);
 
 //==========================================================================
 const pointOfInterest2 = L.icon({
@@ -241,8 +263,9 @@ marker16.bindTooltip("Point of interest");
 var marker16pop = `<b>Асансьор:</b><br>
 Никой не знае къде води.
 Може би не работи.
+<img src="roomImg/elevator.jpg" class="popup-image">
 `
-marker16.bindPopup(marker16pop);
+marker16.bindPopup(marker16pop + markerStyle);
 
 //====================================================
 const toiletIcon2 = L.icon({
@@ -275,8 +298,9 @@ marker18.bindTooltip("Toilet");
 
 var marker18pop = `<b>Тоалетна срещу 9222:</b><br>
 В кабинката има прозорец, от който може да ти се види всичко.
+<img src="roomImg/toilet9222.jpg" class="popup-image">
 `
-marker18.bindPopup(marker18pop);
+marker18.bindPopup(marker18pop + markerStyle);
 
 
 
