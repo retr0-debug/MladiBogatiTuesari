@@ -3,7 +3,19 @@ var map = L.map('map', {
     maxZoom: 7,
     scrollWheelZoom: true,
     setZoom: 5, 
-  }).setView([54.5, 4.6], 15);
+  }).setView([52.5, 7.6], 6);
+
+var markerStyle = `
+<style>
+    .popup-image {
+        max-width: 100%;
+        height: 190px;
+        display: block;
+        margin: 4px auto; 
+    }
+</style>`
+
+
 //==========================================================
 const toiletIcon = L.icon({
     iconUrl: 'https://img.icons8.com/ios-filled/50/toilet.png',
@@ -27,6 +39,12 @@ const marker8 = L.marker([52.74 , 7.76], {
 }).addTo(map);
 marker8.bindTooltip("2.4");
 
+var marker8pop = `<b>8-2.4:</b><br>
+Има прекалено много контакти.
+Мултимедията е най-хубава.
+<img src="roomImg/2_4.jpg" class="popup-image">
+`
+marker8.bindPopup(marker8pop + markerStyle);
 
 
 
