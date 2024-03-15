@@ -2,24 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="login.css">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="login-container">
+    <div class="container">
+        <img src="logoelsys.png" alt="Logo" class="logo">
         <h2>Login</h2>
-        <form action="/login" method="post">
-            <div class="input-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
+        <form action="/login" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
             <button type="submit">Login</button>
         </form>
+        <p>Or login with:</p>
+        <a href="your_google_login_url_here"><img src="google_button.png" alt="Google Login" class="google-button"></a>
+        <p>Don't have an account? <a href="/register">Register here</a></p>
     </div>
 </body>
 </html>

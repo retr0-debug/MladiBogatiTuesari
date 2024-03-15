@@ -5,7 +5,7 @@ body {
     padding: 0;
 }
 
-.signup-container {
+.container {
     width: 50%;
     margin: 50px auto;
     padding: 20px;
@@ -13,6 +13,12 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -28,13 +34,10 @@ label {
     margin-bottom: 5px;
 }
 
-.input-group {
-    margin-bottom: 10px;
-}
-
 input {
     width: 100%;
     padding: 8px;
+    margin-bottom: 10px;
     box-sizing: border-box;
 }
 
@@ -46,6 +49,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #0056b3;
+a {
+    text-decoration: none;
+    color: #007bff;
 }
