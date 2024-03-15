@@ -137,8 +137,9 @@ marker8.bindTooltip("9217");
 var marker8pop = `
 <b>9217:</b><br> 
 Поне е слънчево.
+<img src="roomImg/9217.jpg" class="popup-image">
 `
-marker8.bindPopup(marker8pop);
+marker8.bindPopup(marker8pop + markerStyle);
 
 
 //===========================================================================
@@ -245,9 +246,9 @@ marker15.bindTooltip("Point of interest");
 
 var marker15pop = `<b>Огледало на стълбите:</b><br>
 Едно от малкото огледала в сградата.
-
+<img src="roomImg/mirror.jpg" class="popup-image">
 `
-marker15.bindPopup(marker15pop);
+marker15.bindPopup(marker15pop + markerStyle);
 
 //===========================================================
 const pointOfInterest3 = L.icon({
@@ -282,8 +283,9 @@ var marker17pop = `<b>Тоалетна в коридора до 9230:</b><br>
 Трагична е.
 Няма брави на кабинките.
 Във втората кабинка има дупка в пода, водеща до void-а.
+<img src="roomImg/toilets9230.jpg" class="popup-image">
 `
-marker17.bindPopup(marker17pop);
+marker17.bindPopup(marker17pop + markerStyle);
 
 //=========================================================
 const toiletIcon3 = L.icon({
