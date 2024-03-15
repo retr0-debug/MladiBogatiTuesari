@@ -2,46 +2,24 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+.header {
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f2f2f2;
+    justify-content: flex-end;
 }
 
-.signup-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.input-group {
-    margin-bottom: 15px;
-}
-
-.input-group label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
+.header button {
+    margin-left: 10px;
     border: none;
-    background-color: #007bff;
+    background-color: transparent;
     color: #fff;
     cursor: pointer;
-    border-radius: 5px;
 }
 
-button:hover {
-    background-color: #0056b3;
+.header button:hover {
+    color: #ccc;
 }
