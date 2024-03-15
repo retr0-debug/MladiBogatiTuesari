@@ -30,11 +30,12 @@ user3 = User(username='alekselsys', email = 'aleksandar.m.dimitrov.2022@elsys-bg
 
 session.commit()
 
-for year in range(2019, 2024):
-    check = f'{str(year)}@elsys-bg.org'
-    #user = User.query.filter_by(User.email.contains(check))
-    user = select(User).where(User.email == check)
-    elsys_users.append(user)
+all_users = session.query(User).all()
+elsys_users = []
+for user in all_users:
+    for year in range(2019, 2024):
+        if user.email.endswith(f"{year}@elsys-bg.org"):
+            elsys_users.append(user.email)
 
 print(elsys_users)
 session.close()
@@ -44,6 +45,10 @@ session.close()
 @app.route("/home")
 def index():
     return render_template("index.html")
+
+@app.route("/block8_floors")
+def block8_floors():
+    return render_template("etazhiza8.html")
 
 @app.route("/block8_2")
 def block8_1():
@@ -56,6 +61,10 @@ def block8_3():
 @app.route("/block8_4")
 def block8_4():
     return render_template("block8_4.html")
+
+@app.route("/block9_floors")
+def block9_floors():
+    return render_template("eazhiza9.html")
 
 @app.route("/block9_1")
 def block9_1():
