@@ -89,3 +89,8 @@ input[type="submit"] {
     width: 50vw;
     height: 50vh;
 }
+.TUES{
+    max-width: 250%;
+    max-height:700px;
+     display: auto;
+}
