@@ -1,10 +1,11 @@
 body {
     background-color: #434141; 
     font-family: 'Open Sans', sans-serif;
-    color: #2490EA; 
-    margin: 0;
+    color: rgb(56, 43, 169); 
+    margin: 20px;
     padding: 0;
-    text-shadow: 2px 2px 41px #2490EA; 
+    text-shadow: 2px 2px 41px #362dab;
+    font-size:large;
 }
 
 h1 {
@@ -84,8 +85,4 @@ input[type="submit"] {
     left: 50px;
     width: 50vw;
     height: 50vh;
-}
-
-title{
-    bottom:250px;
 }
