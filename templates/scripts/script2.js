@@ -15,6 +15,14 @@ const marker1 = L.marker([55.29, 5], {
 }).addTo(map);
 marker1.bindTooltip("Toilet");
 
+var marker1pop = `<b>Тоалетна до 9125:</b><br>
+Legendary location.
+Единствената хубава тоалетна в 9 блок.
+Чиста е, вратите се заключват и има огледало.
+`
+
+marker1.bindPopup(marker1pop);
+
 //==============================================================
 const pointOfInterest = L.icon({
     iconUrl: 'https://img.icons8.com/ios-filled/50/point-of-interest.png',
@@ -38,7 +46,14 @@ const marker4 = L.marker([55.28, 4.19], {
 }).addTo(map);
 marker4.bindTooltip("9125");
 
-marker4.bindPopup("9125 popup");
+var marker4pop = `<b>9125:</b><br>
+Голяма и просторна.
+Чиновете са за трима.
+Random врата в края на стаята.
+От нея можеш да спреш тока на сградата.
+`
+
+marker4.bindPopup(marker4pop);
 
 
 //=========================================================================
