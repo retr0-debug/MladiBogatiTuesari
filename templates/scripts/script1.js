@@ -27,6 +27,13 @@ const marker2 = L.marker([54.85, 0.3], {
 }).addTo(map);
 marker2.bindTooltip("Teacher's Room");
 
+var marker2pop = `<b>Учителска стая:</b><br>
+Не ти се иска да ходиш там.
+Вътре има ключ за всяка стая (прави каквото искаш с тази информация).
+`
+
+marker2.bindPopup(marker2pop);
+
 //======================================================================
 
 const rectangle = L.icon({
