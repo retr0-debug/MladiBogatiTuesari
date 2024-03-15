@@ -1,7 +1,7 @@
 from flask import Flask, render_template, redirect, url_for
 from forms import RegisterForm, LoginForm
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import create_engine, Column, Integer, String, DateTime
+from sqlalchemy import create_engine, Column, Integer, String, DateTime, select
 #from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, declarative_base
 
@@ -23,15 +23,22 @@ class User(Base):
 Base.metadata.create_all(engine)
 Session = sessionmaker(bind=engine)
 session = Session()
+elsys_users = []
+user1 = User(username='nikolp08', email='npeneva08@gmail.com', password='nikolp08')
+user2 = User(username = 'nikolelsys', email='nikol.d.peneva.2022@elsys-bg.org', password = 'nikolelsys08')
+user3 = User(username='alekselsys', email = 'aleksandar.m.dimitrov.2022@elsys-bg.org', password = 'alekselsys08')
 
-#user1 = User(username='nikolp08', email='npeneva08@gmail.com', password='nikolp08')
-#user2 = User(username = 'nikolelsys', email='nikol.d.peneva.2022@elsys-bg.org', password = 'nikolelsys08')
-user1 = session.query(User).filter_by(email='%elsys-bg.org')
 session.commit()
-users = session.query(User).all()
-for user in users:
-    print(user.username, user.email)
+
+for year in range(2019, 2024):
+    check = f'{str(year)}@elsys-bg.org'
+    #user = User.query.filter_by(User.email.contains(check))
+    user = select(User).where(User.email == check)
+    elsys_users.append(user)
+
+print(elsys_users)
 session.close()
+
 
 @app.route("/")
 @app.route("/home")
