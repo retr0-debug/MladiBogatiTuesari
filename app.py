@@ -22,3 +22,11 @@ def block10():
 @app.route("/daskalo")
 def daskalo():
     return render_template("daskalo.html")
+
+@app.route("/login")
+def login():
+    pass
+
+@app.route("/register")
+def register():
+    pass
