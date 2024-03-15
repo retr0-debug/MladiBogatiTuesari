@@ -3,7 +3,20 @@ var map = L.map('map', {
     maxZoom: 7,
     scrollWheelZoom: true,
     setZoom: 5, 
-  }).setView([54.5, 4.6], 15);
+  }).setView([54, 7.6], 6);
+
+var markerStyle = `
+<style>
+    .popup-image {
+        max-width: 100%;
+        height: 190px;
+        display: block;
+        margin: 4px auto; 
+    }
+</style>`
+  
+
+
 //==========================================================
 const toiletIcon = L.icon({
     iconUrl: 'https://img.icons8.com/ios-filled/50/toilet.png',
@@ -27,6 +40,14 @@ const marker8 = L.marker([52.74 , 7.7], {
 }).addTo(map);
 marker8.bindTooltip("3.4");
 
+var marker8pop = `<b>8 - 3.4:</b><br>
+Да се оправи задната стена.
+Оптичния кабел на мултимедията не работи.
+<img src="roomImg/3_4.jpg" class="popup-image">
+`
+
+marker8.bindPopup(marker8pop + markerStyle);
+
 //===========================================================================
 const rectangle6 = L.icon({
     iconUrl: 'https://img.icons8.com/pulsar-line/48/rounded-rectangle.png',
@@ -38,6 +59,12 @@ const marker7 = L.marker([52.76, 11.95], {
 }).addTo(map);
 marker7.bindTooltip("3.5");
 
+var marker7pop = `<b>8 - 3.5:</b><br>
+Най-хубавата стая в 8 блок.
+Има 1 климатик повече от другите стаи.
+<img src="roomImg/3_5.jpg" class="popup-image">
+`
+marker7.bindPopup(marker7pop + markerStyle);
 
 
 
