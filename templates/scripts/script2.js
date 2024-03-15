@@ -2,7 +2,7 @@ var map = L.map('map', {
     minZoom: 6,
     maxZoom: 7,
     scrollWheelZoom: true, 
-  }).setView([53.1, 7.5], 6);
+  }).setView([54.4, 7.5], 6);
 
 var markerStyle = `
 <style>
