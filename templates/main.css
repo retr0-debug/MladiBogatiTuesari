@@ -1,11 +1,11 @@
 body {
-    background-color: #434141; 
+    background: linear-gradient(rgb(0, 0, 0),rgb(20, 0, 131));
     font-family: 'Open Sans', sans-serif;
     color: rgb(81, 200, 226); 
     margin: 20px;
     padding: 0;
     text-shadow: 2px 2px 41px #362dab;
-    font-size:large;
+    font-size:50;
 }
 
 h1 {
@@ -19,6 +19,7 @@ h1 {
 }
 
 input[type="submit"] {
+    font-size:30;   
     color: white; 
     background-color: transparent; 
     border: 1px solid white; 
@@ -36,7 +37,7 @@ input[type="submit"] {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width:100%;
     background-color: #0A1F3B; 
     padding: 10px;
     text-align: center;
@@ -44,11 +45,12 @@ input[type="submit"] {
 }
 
 .footer a {
-    color: white !important; /* Добавете !important, за да осигурите, че този стил има приоритет */
-    text-decoration: none; /* Премахнете подчертаването по подразбиране */
+    color: white !important; 
+    text-decoration: none; 
+    font-size:10;
     border: 1px solid white;
-    padding: 10px 20px;
-    margin: 0 10px;
+    padding: 10px 100px;
+    margin: 0 5px;
     cursor: pointer;
 }
 
