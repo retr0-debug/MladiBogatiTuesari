@@ -28,5 +28,5 @@ const marker8 = L.marker([55.24 , 6.28], {
 marker8.bindTooltip("4.1");
 
 
-var osm = L.imageOverlay('8blok_4etaj_layout.png', [[57, -0.99], [50, 16]]);
+var osm = L.imageOverlay('img/8blok_4etaj_layout.png', [[57, -0.99], [50, 16]]);
 osm.addTo(map);
