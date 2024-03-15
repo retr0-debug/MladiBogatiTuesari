@@ -42,5 +42,5 @@ marker7.bindTooltip("3.5");
 
 
 
-var osm = L.imageOverlay('img/8blok_3etaj_layout.png', [[57, -0.99], [50, 16]]);
+var osm = L.imageOverlay('8blok_3etaj_layout.png', [[57, -0.99], [50, 16]]);
 osm.addTo(map);

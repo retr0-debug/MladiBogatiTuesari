@@ -30,5 +30,5 @@ marker8.bindTooltip("2.4");
 
 
 
-var osm = L.imageOverlay('img/8blok_layout(1).png', [[57, -0.99], [50, 16]]);
+var osm = L.imageOverlay('8blok_layout(1).png', [[57, -0.99], [50, 16]]);
 osm.addTo(map);
