@@ -29,9 +29,9 @@ Base.metadata.create_all(engine)
 Session = sessionmaker(bind=engine)
 session = Session()
 elsys_users = []
-user1 = User(username='nikolp08', email='npeneva08@gmail.com', password='nikolp08')
-user2 = User(username = 'nikolelsys', email='nikol.d.peneva.2022@elsys-bg.org', password = 'nikolelsys08')
-user3 = User(username='alekselsys', email = 'aleksandar.m.dimitrov.2022@elsys-bg.org', password = 'alekselsys08')
+#user1 = User(username='nikolp08', email='npeneva08@gmail.com', password='nikolp08')
+#user2 = User(username = 'nikolelsys', email='nikol.d.peneva.2022@elsys-bg.org', password = 'nikolelsys08')
+#user3 = User(username='alekselsys', email = 'aleksandar.m.dimitrov.2022@elsys-bg.org', password = 'alekselsys08')
 #db.session.add(user3)
 session.commit()
 
@@ -120,3 +120,6 @@ def block10():
 @login_required
 def daskalo():
     return render_template("daskalo.html")
+
+if __name__ == "__main__":
+    app.run(debug=True)
