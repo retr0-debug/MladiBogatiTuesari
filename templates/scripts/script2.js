@@ -55,5 +55,5 @@ marker8.bindTooltip("9113");
 
 
 
-var osm = L.imageOverlay('img/devetiblok_purvi.png', [[57, -0.99], [50, 16]]);
+var osm = L.imageOverlay('devetiblok_purvi.png', [[57, -0.99], [50, 16]]);
 osm.addTo(map);
