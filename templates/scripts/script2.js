@@ -1,9 +1,8 @@
 var map = L.map('map', {
     minZoom: 6,
     maxZoom: 7,
-    scrollWheelZoom: true,
-    setZoom: 5, 
-  }).setView([54.5, 4.6], 6);
+    scrollWheelZoom: true, 
+  }).setView([53.1, 7.5], 6);
 
 var markerStyle = `
 <style>
@@ -77,6 +76,47 @@ var marker8pop = `<b>9113:</b><br>
 <img src="roomImg/9113.jpg" class="popup-image">
 `
 marker8.bindPopup(marker8pop + markerStyle);
+
+
+//======================================================
+const teacherRoomicon = L.icon({
+    iconUrl: 'https://img.icons8.com/ios-filled/50/meeting-room.png',
+    iconSize: [40, 40]
+});
+
+
+
+const marker9 = L.marker([54.51, 2.2], {
+    icon: teacherRoomicon
+}).addTo(map);
+marker9.bindTooltip("Medical Office");
+
+var marker9pop = `<b>Медицински кабинет:</b><br>
+Главно за носене на медицински картони.
+Сестрата е chill.
+<img src="roomImg/medOffice.jpg" class="popup-image">
+`
+
+marker9.bindPopup(marker9pop + markerStyle);
+
+//====================================================
+const toiletIcon2 = L.icon({
+    iconUrl: 'https://img.icons8.com/ios-filled/50/toilet.png',
+    iconSize: [35, 35],
+});
+
+const marker10 = L.marker([54.06, 14.8], {
+    icon: toiletIcon2
+}).addTo(map);
+marker10.bindTooltip("Toilet");
+
+var marker10pop = `<b>Тоалетна до входа:</b><br>
+Average тоалетна.
+Вратите се заключват.
+<img src="roomImg/toiletsEntrance.jpg" class="popup-image">
+`
+
+marker10.bindPopup(marker10pop + markerStyle);
 
 
 var osm = L.imageOverlay('devetiblok_purvi.png', [[57, -0.99], [50, 16]]);
