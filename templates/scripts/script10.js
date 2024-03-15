@@ -33,12 +33,28 @@ const marker9 = L.marker([53.79 , 9.34], {
 }).addTo(map);
 marker9.bindTooltip("Vending машини");
 
-var marker9pop = `<b>Вендинг машина:</b><br>
-Legendary location.
-Инфлацията е <em>insane</em>.
+var marker9pop = `<b>Вендинг машини:</b><br>
+<strong>Legendary location.</strong>
+Инфлацията е <strong><em>insane</em></strong>.
 Има шанс да получиш 2 вафли „Боровец“.
 `
 marker9.bindPopup(marker9pop);
+
+//=====================================================
+const pointOfInterest = L.icon({
+    iconUrl: 'https://img.icons8.com/ios-filled/50/point-of-interest.png',
+    iconSize: [40, 40]
+});
+
+const marker10 = L.marker([55, 12.4], {
+    icon: pointOfInterest
+}).addTo(map);
+marker10.bindTooltip("Point of interest");
+
+var marker10pop = `<b>Самолет:</b><br>
+За по-ефективно бягане от час.
+`
+marker10.bindPopup(marker10pop);
 
 var osm = L.imageOverlay('10blok_layout.png', [[57, -0.99], [50, 16]]);
 osm.addTo(map);
