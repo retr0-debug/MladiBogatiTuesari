@@ -2,9 +2,10 @@ body {
     background-color: #000000; 
     font-family: 'Open Sans', sans-serif;
     color: rgb(56, 43, 169); 
-    margin: 0;
+    margin: 20px;
     padding: 0;
     text-shadow: 2px 2px 41px #362dab;
+    font-size:large;
 }
 
 h1 {
@@ -71,8 +72,4 @@ input[type="submit"] {
 #map {
     width: 50vw;
     height: 50vh;
-}
-
-title{
-    bottom:250px;
 }
