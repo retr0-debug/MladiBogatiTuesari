@@ -262,6 +262,22 @@ var marker17pop = `<b>Тоалетна в коридора до 9230:</b><br>
 `
 marker17.bindPopup(marker17pop);
 
+//=========================================================
+const toiletIcon3 = L.icon({
+    iconUrl: 'https://img.icons8.com/ios-filled/50/toilet.png',
+    iconSize: [35, 35],
+});
+
+const marker18 = L.marker([55.15, 7.38], {
+    icon: toiletIcon
+}).addTo(map);
+marker18.bindTooltip("Toilet");
+
+var marker18pop = `<b>Тоалетна срещу 9222:</b><br>
+В кабинката има прозорец, от който може да ти се види всичко.
+`
+marker18.bindPopup(marker18pop);
+
 
 
 var osm = L.imageOverlay('devetiblok_vtori.png', [[57, -0.99], [50, 16]]);

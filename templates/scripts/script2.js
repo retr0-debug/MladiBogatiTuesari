@@ -23,16 +23,6 @@ Legendary location.
 
 marker1.bindPopup(marker1pop);
 
-//==============================================================
-const pointOfInterest = L.icon({
-    iconUrl: 'https://img.icons8.com/ios-filled/50/point-of-interest.png',
-    iconSize: [40, 40]
-});
-
-const marker3 = L.marker([54.7, 6.9], {
-    icon: pointOfInterest
-}).addTo(map);
-marker3.bindTooltip("Point of interest");
 
 //======================================================================
 
@@ -67,7 +57,12 @@ const marker8 = L.marker([52.54 , 14.7], {
 }).addTo(map);
 marker8.bindTooltip("9113");
 
-
+var marker8pop = `<b>9113:</b><br> 
+Много малка.
+Няма място.
+Наистина много малка.
+`
+marker8.bindPopup(marker8pop);
 
 
 var osm = L.imageOverlay('devetiblok_purvi.png', [[57, -0.99], [50, 16]]);
