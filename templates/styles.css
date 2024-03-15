@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color : linear-gradient(to right, rgb(0, 0, 0), rgb(0, 9, 110));
     margin: 0;
     padding: 0;
 }
@@ -9,7 +9,7 @@ body {
     width: 50%;
     margin: 50px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 8, 100)); 
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
