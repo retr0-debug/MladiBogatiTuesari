@@ -95,3 +95,36 @@ input[type="submit"] {
     display: block;
     margin: 0 auto; 
 }
+
+.sign-in-button,
+.log-in-button {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.sign-in-button:hover,
+.log-in-button:hover {
+    background-color: white;
+    color: #ffffff;
+}
+
+.return-button {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin: 0;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+.return-button:hover {
+    background-color: white;
+    color: #ffffff;
+}
