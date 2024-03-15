@@ -45,9 +45,11 @@ for user in all_users:
 #print(elsys_users)
 session.close()
 
+@login_manager.user_loader
+def load_user(username):
+  return User.query.get(str(username))
 
 @app.route('/login', methods=['GET','POST'])
-@login_required
 def login():
   form = LoginForm(csrf_enabled=False)
   if form.validate_on_submit():
@@ -69,6 +71,11 @@ def signup():
         db.session.add(user)
         db.session.commit()
     return render_template('signup.html', form=form)
+
+@login_manager.unauthorized_handler
+def unauthorized():
+  return "Sorry you must be an ELSYS student to view this page"
+
 
 @app.route("/")
 @app.route("/home")

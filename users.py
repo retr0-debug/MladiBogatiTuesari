@@ -1,4 +1,4 @@
-from MladiBogatiTuesari.app import db
+from app import db
 from flask import Flask
 
 class User:
