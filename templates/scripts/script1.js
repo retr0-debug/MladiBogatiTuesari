@@ -150,5 +150,5 @@ marker13.bindTooltip("9202");
 
 
 
-var osm = L.imageOverlay('ìmg/devetiblok_vtori.png', [[57, -0.99], [50, 16]]);
+var osm = L.imageOverlay('devetiblok_vtori.png', [[57, -0.99], [50, 16]]);
 osm.addTo(map);
