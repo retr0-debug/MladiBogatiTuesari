@@ -28,18 +28,6 @@ const marker2 = L.marker([54.85, 0.3], {
 }).addTo(map);
 marker2.bindTooltip("Teacher's Room");
 
-
-//==============================================================
-const pointOfInterest = L.icon({
-    iconUrl: 'https://img.icons8.com/ios-filled/50/point-of-interest.png',
-    iconSize: [40, 40]
-});
-
-const marker3 = L.marker([54.7, 6.9], {
-    icon: pointOfInterest
-}).addTo(map);
-marker3.bindTooltip("Point of interest");
-
 //======================================================================
 
 const rectangle = L.icon({
