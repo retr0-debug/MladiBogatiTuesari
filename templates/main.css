@@ -48,16 +48,16 @@ input[type="submit"] {
 .footer a {
     color: white !important; 
     text-decoration: none; 
-    font-size: 10px; /* Задайте същия размер на шрифта както за бутона */
+    font-size: 10px; 
     border: 1px solid white;
-    padding: 10px 20px; /* Задайте същия размер на padding както за бутона */
-    margin: 0 10px; /* Задайте същия размер на margin както за бутона */
+    padding: 10px 20px; 
+    margin: 0 10px; 
     cursor: pointer;
-    display: inline-block; /* Задайте inline-block за да може да се наложи padding и margin */
+    display: inline-block; 
 }
 
 .footer a:hover {
-    text-decoration: underline; /* Добавете подчертаване при ховър */
+    text-decoration: underline; 
 }
 
 
