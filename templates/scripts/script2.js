@@ -15,16 +15,14 @@ const marker1 = L.marker([55.29, 5], {
 }).addTo(map);
 marker1.bindTooltip("Toilet");
 
-//==============================================================
-const pointOfInterest = L.icon({
-    iconUrl: 'https://img.icons8.com/ios-filled/50/point-of-interest.png',
-    iconSize: [40, 40]
-});
+var marker1pop = `<b>Тоалетна до 9125:</b><br>
+Legendary location.
+Единствената хубава тоалетна в 9 блок.
+Чиста е, вратите се заключват и има огледало.
+`
 
-const marker3 = L.marker([54.7, 6.9], {
-    icon: pointOfInterest
-}).addTo(map);
-marker3.bindTooltip("Point of interest");
+marker1.bindPopup(marker1pop);
+
 
 //======================================================================
 
@@ -38,7 +36,14 @@ const marker4 = L.marker([55.28, 4.19], {
 }).addTo(map);
 marker4.bindTooltip("9125");
 
-marker4.bindPopup("9125 popup");
+var marker4pop = `<b>9125:</b><br>
+Голяма и просторна.
+Чиновете са за трима.
+Random врата в края на стаята.
+От нея можеш да спреш тока на сградата.
+`
+
+marker4.bindPopup(marker4pop);
 
 
 //=========================================================================
@@ -52,7 +57,12 @@ const marker8 = L.marker([52.54 , 14.7], {
 }).addTo(map);
 marker8.bindTooltip("9113");
 
-
+var marker8pop = `<b>9113:</b><br> 
+Много малка.
+Няма място.
+Наистина много малка.
+`
+marker8.bindPopup(marker8pop);
 
 
 var osm = L.imageOverlay('devetiblok_purvi.png', [[57, -0.99], [50, 16]]);

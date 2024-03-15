@@ -27,6 +27,13 @@ const marker2 = L.marker([54.85, 0.3], {
 }).addTo(map);
 marker2.bindTooltip("Teacher's Room");
 
+var marker2pop = `<b>Учителска стая:</b><br>
+Не ти се иска да ходиш там.
+Вътре има ключ за всяка стая (прави каквото искаш с тази информация).
+`
+
+marker2.bindPopup(marker2pop);
+
 //======================================================================
 
 const rectangle = L.icon({
@@ -41,9 +48,8 @@ marker4.bindTooltip("9205");
 
 var marker4pop = `<b>9205:</b><br>
 Нещо като зала за лекции.
-Главно за поправки по градивни елементи.
+Главно за контролни по градивни елементи.
 На почти всеки чин има рисунки от ученици за ученици.
-
 `
 marker4.bindPopup(marker4pop);
 
@@ -63,7 +69,6 @@ var marker5pop = `<b>9230:</b><br>
 Лявата редица е хубава, дясната не става.
 Вратата по някаква причина е най-отзад на стаята.
 Floor loot: JPG Le Beau, пречиствател на въздух, туба.
-Еднo момче се напи и припадна в нея.
 `
 marker5.bindPopup(marker5pop);
 
@@ -132,9 +137,7 @@ marker10.bindTooltip("9224");
 
 var marker10pop = `<b>9224:</b><br>
 Компютърна зала.
-Има 14 лаптопа и може би има 14 мишки и зарядни.
-Мила Нейкова hangout spot.
-Понякога има адекватни учители. 
+Има 14 лаптопа и може би има 14 мишки и зарядни. 
 Има мултимедия и в хубав ден ще работи.
 `
 
@@ -240,6 +243,40 @@ var marker16pop = `<b>Асансьор:</b><br>
 Може би не работи.
 `
 marker16.bindPopup(marker16pop);
+
+//====================================================
+const toiletIcon2 = L.icon({
+    iconUrl: 'https://img.icons8.com/ios-filled/50/toilet.png',
+    iconSize: [35, 35],
+});
+
+const marker17 = L.marker([54.83, 14.8], {
+    icon: toiletIcon
+}).addTo(map);
+marker17.bindTooltip("Toilet");
+
+var marker17pop = `<b>Тоалетна в коридора до 9230:</b><br>
+Трагична е.
+Няма брави на кабинките.
+Във втората кабинка има дупка в пода, водеща до void-а.
+`
+marker17.bindPopup(marker17pop);
+
+//=========================================================
+const toiletIcon3 = L.icon({
+    iconUrl: 'https://img.icons8.com/ios-filled/50/toilet.png',
+    iconSize: [35, 35],
+});
+
+const marker18 = L.marker([55.15, 7.38], {
+    icon: toiletIcon
+}).addTo(map);
+marker18.bindTooltip("Toilet");
+
+var marker18pop = `<b>Тоалетна срещу 9222:</b><br>
+В кабинката има прозорец, от който може да ти се види всичко.
+`
+marker18.bindPopup(marker18pop);
 
 
 
