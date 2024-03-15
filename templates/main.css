@@ -1,10 +1,10 @@
 body {
-    background-color: #000000; 
+    background-color: #434141; 
     font-family: 'Open Sans', sans-serif;
-    color: rgb(56, 43, 169); 
+    color: #2490EA; 
     margin: 0;
     padding: 0;
-    text-shadow: 2px 2px 41px #362dab;
+    text-shadow: 2px 2px 41px #2490EA; 
 }
 
 h1 {
@@ -43,14 +43,20 @@ input[type="submit"] {
 }
 
 .footer a {
-    color: white;
-    text-decoration: none;
-    margin: 100px 10px;
+    color: white !important; /* Добавете !important, за да осигурите, че този стил има приоритет */
+    text-decoration: none; /* Премахнете подчертаването по подразбиране */
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
 }
 
+
 .footer a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Добавете подчертаване при ховър */
 }
+
+
 
 .sign-in-button,
 .log-in-button {
@@ -65,10 +71,17 @@ input[type="submit"] {
 .sign-in-button:hover,
 .log-in-button:hover {
     background-color: white;
-    color: #0A1F3B;
+    color: #ffffff;
 }
 
 #map {
+    border-style: outset;
+    border-bottom-style: outset;
+  border-bottom-style: inset;
+  border-left-style: inset;
+  border-width: 20px;
+    position: static;
+    left: 50px;
     width: 50vw;
     height: 50vh;
 }
