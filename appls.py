@@ -4,7 +4,6 @@ app = Flask(__name__)
 
 users = []
 
-
 @app.route('/')
 def index():
     return render_template('login.html')
