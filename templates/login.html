@@ -12,13 +12,26 @@
         <img src="logoelsys.png" alt="Logo" class="logo">
         <h2>Login</h2>
         <form action="/" method="POST">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <button type="submit">Login</button>
+            {{ form.hidden.tag() }}
+            p>
+            {{ form.email.label }}<br>
+            {{ form.email(size=32) }}<br>
+            {% for error in form.email.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.password.label }}<br>
+            {{ form.password(size=32) }}<br>
+            {% for error in form.password.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>{{ form.remember() }} {{ form.remember.label }}</p>
+        <p>{{ form.submit() }}</p>
         </form>
-        <p>Don't have an account? <a href="/register">Register here</a></p>
+        <p>Don't have an account? <a href="{{ url_for('signup')}}">Sign Up here</a></p>
+    </form>
     </div>
 </body>
 </html>
