@@ -2,8 +2,7 @@ var map = L.map('map', {
     minZoom: 6,
     maxZoom: 7,
     scrollWheelZoom: true,
-  }).setView([52.3, 7.6], 6);
-
+}).setView([54.04, 7.5], 6);
 
 var markerStyle = `
 <style>
@@ -15,8 +14,16 @@ var markerStyle = `
     }
 </style>`
 
+const toiletIcon = L.icon({
+    iconUrl: 'https://img.icons8.com/ios-filled/50/toilet.png',
+    iconSize: [35, 35],
+});
 
-//=========================================================================
+const marker1 = L.marker([55.29, 9.74], {
+    icon: toiletIcon
+}).addTo(map);
+marker1.bindTooltip("Toilet");
+
 const rectangle5 = L.icon({
     iconUrl: 'https://img.icons8.com/pulsar-line/48/rounded-rectangle.png',
     iconSize: [67, 169]
@@ -34,7 +41,6 @@ var marker8pop = `<b>Книжарница:</b><br>
 `
 marker8.bindPopup(marker8pop + markerStyle);
 
-//==========================================================================
 const rectangle6 = L.icon({
     iconUrl: 'https://img.icons8.com/pulsar-line/48/rounded-rectangle.png',
     iconSize: [60, 85]
@@ -53,7 +59,6 @@ var marker9pop = `<b>Вендинг машини:</b><br>
 `
 marker9.bindPopup(marker9pop + markerStyle);
 
-//=====================================================
 const pointOfInterest = L.icon({
     iconUrl: 'https://img.icons8.com/ios-filled/50/point-of-interest.png',
     iconSize: [40, 40]

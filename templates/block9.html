@@ -2,7 +2,7 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-    <link rel="stylesheet" href="main.css">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
     <title>Блок 9 - 2 Етаж</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -24,7 +24,7 @@
     </div>
 </body>
 
-<script src="scripts/script1.js"></script>
+<script src="{{url_for('static', filename='script1.js')}}"></script>
 </html>
 
 
