@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from flask import Flask, render_template, request, redirect, url_for, session, flash
 import sqlite3
 
@@ -48,9 +49,17 @@ def add_user(username, password):
 
 @app.route('/')
 @app.route('/home')
-def index():
-    return render_template("index.html")
+=======
+from flask import Flask, render_template
 
+app = Flask(__name__)
+
+@app.route('/')
+>>>>>>> 41248d365ab4a89359b8bd6b90fa90a4b259acc1
+def index():
+    return render_template('base.html', content='index.html')
+
+<<<<<<< HEAD
 @app.route("/block8")
 def block8_floors():
     return render_template("etazhiza8.html")
@@ -89,3 +98,19 @@ def daskalo():
 
 if __name__ == "__main__":
     app.run(debug=True)
+=======
+@app.route('/login')
+def login():
+    return render_template('base.html', content='login.html')
+
+@app.route('/signup')
+def signup():
+    return render_template('base.html', content='signup.html')
+
+@app.route('/unauthorized')
+def unauthorized():
+    return render_template('base.html', content='unauthorized.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
+>>>>>>> 41248d365ab4a89359b8bd6b90fa90a4b259acc1
