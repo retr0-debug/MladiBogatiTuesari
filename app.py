@@ -1,40 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for, session, flash
-from forms import LoginForm
 import sqlite3
 
 app = Flask(__name__, static_url_path='/static')
 app.secret_key = 'your_secret_key'
-
-#def add_user(email, password):
-    #conn = sqlite3.connect('usersdata.db')
-    #c = conn.cursor()
-    #c.execute("INSERT INTO usersdata (username, password) VALUES (?, ?)", (email, password))
-    #conn.commit()
-    #saconn.close()
-
-#create_database()
-#add_user('nikol.d.peneva.2022@elsys-bg.org', 'Nikol1234')
-#add_user('aleksandar.m.dimitrov.2022@elsys-bg.org', 'Aleks1234')
-
-
-#@app.route('/')
-#@app.route('/login', methods=['GET', 'POST'])
-#def login():
-    #form = LoginForm()
-    #if request.method == 'POST':
-        #username = request.form['username']
-        #password = request.form['password']
-    #return render_template('login.html', form=form)
-
-#@app.route('/signuп', methods=['GET', 'POST'])
-#def register():
-    #if request.method == 'POST':
-        #username = request.form['username']
-        #password = request.form['password']
-        #add_user(username, password)
-        #flash('Успешна регистрация!', 'success')
-        #return redirect(url_for('login'))
-    #return render_template('signup.html')
 
 @app.route('/')
 @app.route('/home')
