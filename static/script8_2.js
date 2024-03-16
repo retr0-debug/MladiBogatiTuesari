@@ -2,7 +2,8 @@ var map = L.map('map', {
     minZoom: 6,
     maxZoom: 7,
     scrollWheelZoom: true,
-}).setView([52.5, 7.6], 6);
+    setZoom: 5, 
+  }).setView([52.5, 7.6], 6);
 
 var markerStyle = `
 <style>
@@ -14,6 +15,8 @@ var markerStyle = `
     }
 </style>`
 
+
+//==========================================================
 const toiletIcon = L.icon({
     iconUrl: 'https://img.icons8.com/ios-filled/50/toilet.png',
     iconSize: [35, 35],
@@ -24,6 +27,8 @@ const marker1 = L.marker([55.29, 9.74], {
 }).addTo(map);
 marker1.bindTooltip("Toilet");
 
+
+//=========================================================================
 const rectangle5 = L.icon({
     iconUrl: 'https://img.icons8.com/pulsar-line/48/rounded-rectangle.png',
     iconSize: [59, 120]
@@ -40,6 +45,8 @@ var marker8pop = `<b>8-2.4:</b><br>
 <img src="roomImg/2_4.jpg" class="popup-image">
 `
 marker8.bindPopup(marker8pop + markerStyle);
+
+
 
 var osm = L.imageOverlay('8blok_layout(1).png', [[57, -0.99], [50, 16]]);
 osm.addTo(map);

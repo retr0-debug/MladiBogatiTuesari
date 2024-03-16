@@ -2,7 +2,8 @@ var map = L.map('map', {
     minZoom: 6,
     maxZoom: 7,
     scrollWheelZoom: true,
-}).setView([54.04, 7.5], 6);
+  }).setView([52.3, 7.6], 6);
+
 
 var markerStyle = `
 <style>
@@ -14,16 +15,8 @@ var markerStyle = `
     }
 </style>`
 
-const toiletIcon = L.icon({
-    iconUrl: 'https://img.icons8.com/ios-filled/50/toilet.png',
-    iconSize: [35, 35],
-});
 
-const marker1 = L.marker([55.29, 9.74], {
-    icon: toiletIcon
-}).addTo(map);
-marker1.bindTooltip("Toilet");
-
+//=========================================================================
 const rectangle5 = L.icon({
     iconUrl: 'https://img.icons8.com/pulsar-line/48/rounded-rectangle.png',
     iconSize: [67, 169]
@@ -37,10 +30,11 @@ marker8.bindTooltip("Книжарница");
 var marker8pop = `<b>Книжарница:</b><br>
 Главно за хартия за контролни(при г-жа Абрамович) и калкулатори(при г-жа Башева).
 До нея има античен телефон.
-<img src="roomImg/bookstore.jpg" class="popup-image">
+<img src="static/roomImg/bookstore.jpg" class="popup-image">
 `
 marker8.bindPopup(marker8pop + markerStyle);
 
+//==========================================================================
 const rectangle6 = L.icon({
     iconUrl: 'https://img.icons8.com/pulsar-line/48/rounded-rectangle.png',
     iconSize: [60, 85]
@@ -55,10 +49,11 @@ var marker9pop = `<b>Вендинг машини:</b><br>
 <strong>Legendary location.</strong>
 Инфлацията е <strong><em>insane</em></strong>.
 Има шанс да получиш 2 вафли „Боровец“.
-<img src="roomImg/vending.jpg" class="popup-image">
+<img src="static/roomImg/vending.jpg" class="popup-image">
 `
 marker9.bindPopup(marker9pop + markerStyle);
 
+//=====================================================
 const pointOfInterest = L.icon({
     iconUrl: 'https://img.icons8.com/ios-filled/50/point-of-interest.png',
     iconSize: [40, 40]
@@ -71,9 +66,9 @@ marker10.bindTooltip("Point of interest");
 
 var marker10pop = `<b>Самолет:</b><br>
 За по-ефективно бягане от час.
-<img src="roomImg/airplane.jpg" class="popup-image">
+<img src="static/airplane.jpg" class="popup-image">
 `
 marker10.bindPopup(marker10pop + markerStyle);
 
-var osm = L.imageOverlay('10blok_layout.png', [[57, -0.99], [50, 16]]);
+var osm = L.imageOverlay('static/10blok_layout.png', [[57, -0.99], [50, 16]]);
 osm.addTo(map);

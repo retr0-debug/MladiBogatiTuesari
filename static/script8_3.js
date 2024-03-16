@@ -2,8 +2,8 @@ var map = L.map('map', {
     minZoom: 6,
     maxZoom: 7,
     scrollWheelZoom: true,
-    setZoom; 5,
-}).setView([54.4, 7.5], 6);
+    setZoom: 5, 
+  }).setView([54, 7.6], 6);
 
 var markerStyle = `
 <style>
@@ -14,7 +14,10 @@ var markerStyle = `
         margin: 4px auto; 
     }
 </style>`
+  
 
+
+//==========================================================
 const toiletIcon = L.icon({
     iconUrl: 'https://img.icons8.com/ios-filled/50/toilet.png',
     iconSize: [35, 35],
@@ -25,23 +28,27 @@ const marker1 = L.marker([55.29, 9.74], {
 }).addTo(map);
 marker1.bindTooltip("Toilet");
 
+
+//=========================================================================
 const rectangle5 = L.icon({
     iconUrl: 'https://img.icons8.com/pulsar-line/48/rounded-rectangle.png',
     iconSize: [59, 120]
 });
 
-const marker8 = L.marker([52.54 , 14.7], {
+const marker8 = L.marker([52.74 , 7.7], {
     icon: rectangle5
 }).addTo(map);
-marker8.bindTooltip("9113");
+marker8.bindTooltip("3.4");
 
-var marker8pop = `<b>9113:</b><br> 
-Много малка.
-Няма място.
-Наистина много малка.
-<img src="roomImg/3_4.jpg" class="popup-image">
+var marker8pop = `<b>8 - 3.4:</b><br>
+Да се оправи задната стена.
+Оптичния кабел на мултимедията не работи.
+<img src="static/roomImg/3_4.jpg" class="popup-image">
 `
+
 marker8.bindPopup(marker8pop + markerStyle);
+
+//===========================================================================
 const rectangle6 = L.icon({
     iconUrl: 'https://img.icons8.com/pulsar-line/48/rounded-rectangle.png',
     iconSize: [59, 120]
@@ -55,10 +62,12 @@ marker7.bindTooltip("3.5");
 var marker7pop = `<b>8 - 3.5:</b><br>
 Най-хубавата стая в 8 блок.
 Има 1 климатик повече от другите стаи.
-<img src="roomImg/3_5.jpg" class="popup-image">
+<img src="static/roomImg/3_5.jpg" class="popup-image">
 `
 marker7.bindPopup(marker7pop + markerStyle);
 
 
-var osm = L.imageOverlay('8blok_3etaj_layout.png', [[57, -0.99], [50, 16]]);
+
+
+var osm = L.imageOverlay('static/8blok_3etaj_layout.png', [[57, -0.99], [50, 16]]);
 osm.addTo(map);

@@ -2,7 +2,7 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href = "{{ url_for('static', filename='main.css') }}">
     <title>Блок 10 </title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -16,14 +16,14 @@
     <h1 id="start">Блок 10</h1>
   <div id="map"div></div>
     <div class="footer">
-        <input type="submit" value="Върни се на началната страница" target="_blank" onclick="window.location.href = 'index.html';">
+        <input type="submit" value="Върни се на началната страница" target="_blank" onclick="window.location.href = '/home';">
         <a href="https://www.google.bg/maps/dir/Факултет+по+транспорта+(ТУ-София)/42.6674403,23.3162753/@42.6543455,23.3534452,16.75z/data=!4m8!4m7!1m5!1m1!1s0x40aa8426c28853ef:0x507b5ee6b85ffd1e!2m2!1d23.3552696!2d42.6527332!1m0?hl=bg&entry=ttu"
            target="_blank" id="location">Локация</a>
         <a href="https://elsys-bg.org/" target="_blank">Официален сайт на ТУЕС</a>
     </div>
 </body>
 
-<script src="scripts/script10.js"></script>
+<script src="{{url_for('static', filename='script10.js')}}"></script>
 </html>
 
 

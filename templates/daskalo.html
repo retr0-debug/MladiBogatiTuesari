@@ -2,7 +2,7 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-    <link rel="stylesheet" href="main2.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main2.css') }}">
     <title>Туес</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -13,14 +13,14 @@
      crossorigin=""></script>
 </head>
 <body>
-    <h1 id="start">Сградата на Туес (2024година)</h1>
+    <h1 id="start">Сградата на Туес (2024 година)</h1>
   
-    <img src="daskaloland.jpg" class="TUES">
+    <img src="{{ url_for('static', filename='daskaloland.jpg') }}" class="TUES">
 
     <div class="footer">
 
        
-        <input type="submit" value="Върни се на началната страница" target="_blank" onclick="window.location.href = 'index.html';">
+        <input type="submit" value="Върни се на началната страница" target="_blank" onclick="window.location.href = '/home';">
         <a href="https://www.google.bg/maps/dir/Факултет+по+транспорта+(ТУ-София)/42.6674403,23.3162753/@42.6543455,23.3534452,16.75z/data=!4m8!4m7!1m5!1m1!1s0x40aa8426c28853ef:0x507b5ee6b85ffd1e!2m2!1d23.3552696!2d42.6527332!1m0?hl=bg&entry=ttu"
            target="_blank" id="location">Локация</a>
           

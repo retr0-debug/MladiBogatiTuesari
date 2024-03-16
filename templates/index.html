@@ -1,11 +1,10 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
-    <sript type=""text/javascript"  srs"{{url_for('static', filename='script/script.js')}}"/sript> 
-    
-    
-    <title>Elsyser's home</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" href="styles.css">
+     <title>Elsyser's home</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
@@ -17,10 +16,12 @@
 <body>
      <h1 id="start">Elsyser's home</h1>
      <div class="button-container">
-         <input type="submit" value="Сграда на ТУЕС" target="_blank" onclick="window.location.href = 'daskalo.html';">
-        <input type="submit" value="Карта на 8 блок" target="_blank" onclick="window.location.href = 'etazhiza8.html';">
-        <input type="submit" value="Карта на 9 блок" target="_blank" onclick="window.location.href = 'etazhiza9.html';">
-        <input type="submit" value="Карта на 10 блок" target="_blank" onclick="window.location.href = 'block10.html';">
+         <input type="submit" value="Сграда на ТУЕС" target="_blank" onclick="window.location.href = '/daskalo';">
+        {% for i in range(8,11)%}
+        <input type="submit" value="Карта на {{i}} блок" target="_blank" onclick="window.location.href = '/block{{i}}';">
+        <!--<input type="submit" value="Карта на {{i}} блок" target="_blank" onclick="window.location.href = '/block{{i}}';">-->
+        <!--<input type="submit" value="Карта на {{i}} блок" target="_blank" onclick="window.location.href = '/block{{i}}';">-->
+        {%endfor%}
     
     </div>  
 
