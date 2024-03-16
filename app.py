@@ -13,15 +13,15 @@ def index():
 def block8_floors():
     return render_template("etazhiza8.html")
 
-@app.route("/block8/2")
+@app.route("/block8_2")
 def block8_1():
     return render_template("block8_2.html")
 
-@app.route("/block8/3")
+@app.route("/block8_3")
 def block8_3():
     return render_template("block8_3.html")
 
-@app.route("/block8/4")
+@app.route("/block8_4")
 def block8_4():
     return render_template("block8_4.html")
 
@@ -29,11 +29,11 @@ def block8_4():
 def block9_floors():
     return render_template("etazhiza9.html")
 
-@app.route("/block9/1")
+@app.route("/block9_1")
 def block9_1():
     return render_template("block9_1.html")
 
-@app.route("/block9/2")
+@app.route("/block9_2")
 def block9_2():
     return render_template("block9.html")
 
