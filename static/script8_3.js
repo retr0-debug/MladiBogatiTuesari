@@ -69,5 +69,5 @@ marker7.bindPopup(marker7pop + markerStyle);
 
 
 
-var osm = L.imageOverlay('8blok_3etaj_layout.png', [[57, -0.99], [50, 16]]);
+var osm = L.imageOverlay('static/8blok_3etaj_layout.png', [[57, -0.99], [50, 16]]);
 osm.addTo(map);
