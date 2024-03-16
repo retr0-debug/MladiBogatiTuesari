@@ -2,7 +2,7 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
     <title>Elsyser's home</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -14,12 +14,10 @@
 </head>
 <body>
     <h1 id="start">Elsyser's home</h1>
-    <div class="button-container">  
-        {% for i in range(2,5)}
-        <input type="submit" value="Етаж {{i}} " target="_blank" onclick="window.location.href = '/block8/{{i}}';">
-        <!--<input type="submit" value="Етаж 3" target="_blank" onclick="window.location.href = '/block8/3';">-->
-        <!--<input type="submit" value="Етаж 4" target="_blank" onclick="window.location.href = '/block8/4';">-->
-        {% endfor %}
+    <div class="button-container"> 
+        <input type="submit" value="Етаж 2" target="_blank" onclick="window.location.href = '/block8/2';">
+        <input type="submit" value="Етаж 3" target="_blank" onclick="window.location.href = '/block8/3';">
+        <input type="submit" value="Етаж 4" target="_blank" onclick="window.location.href = '/block8/4';">
     </div>
    
 
