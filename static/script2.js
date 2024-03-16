@@ -29,7 +29,7 @@ var marker1pop = `<b>Тоалетна до 9125:</b><br>
 Legendary location.
 Единствената хубава тоалетна в 9 блок.
 Чиста е, вратите се заключват и има огледало.
-<img src="roomImg/toilets9215.jpg" class="popup-image">
+<img src="static/roomImg/toilets9215.jpg" class="popup-image">
 `
 
 marker1.bindPopup(marker1pop + markerStyle);
@@ -52,7 +52,7 @@ var marker4pop = `<b>9125:</b><br>
 Чиновете са за трима.
 Random врата в края на стаята.
 От нея можеш да спреш тока на сградата.
-<img src="roomImg/9215.jpg" class="popup-image">
+<img src="static/roomImg/9215.jpg" class="popup-image">
 `
 
 marker4.bindPopup(marker4pop + markerStyle);
@@ -73,7 +73,7 @@ var marker8pop = `<b>9113:</b><br>
 Много малка.
 Няма място.
 Наистина много малка.
-<img src="roomImg/9113.jpg" class="popup-image">
+<img src="static/roomImg/9113.jpg" class="popup-image">
 `
 marker8.bindPopup(marker8pop + markerStyle);
 
@@ -94,7 +94,7 @@ marker9.bindTooltip("Medical Office");
 var marker9pop = `<b>Медицински кабинет:</b><br>
 Главно за носене на медицински картони.
 Сестрата е chill.
-<img src="roomImg/medOffice.jpg" class="popup-image">
+<img src="static/roomImg/medOffice.jpg" class="popup-image">
 `
 
 marker9.bindPopup(marker9pop + markerStyle);
@@ -113,7 +113,7 @@ marker10.bindTooltip("Toilet");
 var marker10pop = `<b>Тоалетна до входа:</b><br>
 Average тоалетна.
 Вратите се заключват.
-<img src="roomImg/toiletsEntrance.jpg" class="popup-image">
+<img src="static/roomImg/toiletsEntrance.jpg" class="popup-image">
 `
 
 marker10.bindPopup(marker10pop + markerStyle);
