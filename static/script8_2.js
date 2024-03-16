@@ -42,11 +42,11 @@ marker8.bindTooltip("2.4");
 var marker8pop = `<b>8-2.4:</b><br>
 Има прекалено много контакти.
 Мултимедията е най-хубава.
-<img src="roomImg/2_4.jpg" class="popup-image">
+<img src="static/roomImg/2_4.jpg" class="popup-image">
 `
 marker8.bindPopup(marker8pop + markerStyle);
 
 
 
-var osm = L.imageOverlay('8blok_layout(1).png', [[57, -0.99], [50, 16]]);
+var osm = L.imageOverlay('static/8blok_layout(1).png', [[57, -0.99], [50, 16]]);
 osm.addTo(map);

@@ -43,10 +43,10 @@ marker8.bindTooltip("4.1");
 var marker8pop = `<b>8-4.1:</b><br>
 Има малко контакти.
 Най-хубава гледка.
-<img src="roomImg/4_1.jpg" class="popup-image">
+<img src="static/roomImg/4_1.jpg" class="popup-image">
 `
 
 marker8.bindPopup(marker8pop + markerStyle);
 
-var osm = L.imageOverlay('8blok_4etaj_layout.png', [[57, -0.99], [50, 16]]);
+var osm = L.imageOverlay('static/8blok_4etaj_layout.png', [[57, -0.99], [50, 16]]);
 osm.addTo(map);

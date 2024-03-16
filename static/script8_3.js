@@ -43,7 +43,7 @@ marker8.bindTooltip("3.4");
 var marker8pop = `<b>8 - 3.4:</b><br>
 Да се оправи задната стена.
 Оптичния кабел на мултимедията не работи.
-<img src="roomImg/3_4.jpg" class="popup-image">
+<img src="static/roomImg/3_4.jpg" class="popup-image">
 `
 
 marker8.bindPopup(marker8pop + markerStyle);
@@ -62,7 +62,7 @@ marker7.bindTooltip("3.5");
 var marker7pop = `<b>8 - 3.5:</b><br>
 Най-хубавата стая в 8 блок.
 Има 1 климатик повече от другите стаи.
-<img src="roomImg/3_5.jpg" class="popup-image">
+<img src="static/roomImg/3_5.jpg" class="popup-image">
 `
 marker7.bindPopup(marker7pop + markerStyle);
 
