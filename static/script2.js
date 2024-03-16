@@ -119,5 +119,5 @@ Average тоалетна.
 marker10.bindPopup(marker10pop + markerStyle);
 
 
-var osm = L.imageOverlay('devetiblok_purvi.png', [[57, -0.99], [50, 16]]);
+var osm = L.imageOverlay('static/devetiblok_purvi.png', [[57, -0.99], [50, 16]]);
 osm.addTo(map);
