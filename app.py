@@ -6,7 +6,7 @@ app = Flask(__name__, static_url_path='/static')
 app.secret_key = 'your_secret_key'
 
 def create_database():
-    conn = sqlite3.connect('users.db')
+    conn = sqlite3.connect('usersdata.db')
     c = conn.cursor()
     c.execute('''CREATE TABLE IF NOT EXISTS users 
                  (id INTEGER PRIMARY KEY AUTOINCREMENT, 
@@ -15,12 +15,15 @@ def create_database():
     conn.commit()
     conn.close()
 
-def add_user(username, password):
-    conn = sqlite3.connect('users.db')
+def add_user(email, password):
+    conn = sqlite3.connect('usersdata.db')
     c = conn.cursor()
-    c.execute("INSERT INTO users (username, password) VALUES (?, ?)", (username, password))
+    c.execute("INSERT INTO usersdata (username, password) VALUES (?, ?)", (email, password))
     conn.commit()
     conn.close()
+
+add_user('nikol.d.peneva.2022@elsys-bg.org', 'Nikol1234')
+add_user('aleksandar.m.dimitrov.2022@elsys-bg.org', 'Aleks1234')
 
 
 @app.route('/')
@@ -41,13 +44,6 @@ def login():
         #flash('Успешна регистрация!', 'success')
         #return redirect(url_for('login'))
     #return render_template('signup.html')
-
-#@app.route("/home")
-#def index():
-    #return render_template("index.html")
-
-#@app.route('/')
-#@app.route('/home')
 
 @app.route('/')
 def index():
@@ -104,6 +100,6 @@ def signup():
 def unauthorized():
     return render_template('base.html', content='unauthorized.html')
 
-if __name__ == '__main__':
-    app.run(debug=True)
+#if __name__ == '__main__':
+    #app.run(debug=True)
 
