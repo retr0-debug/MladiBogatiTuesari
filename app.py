@@ -37,6 +37,7 @@ app.secret_key = 'your_secret_key'
     #return render_template('signup.html')
 
 @app.route('/')
+@app.route('/home')
 def index():
     return render_template('index.html')
 
