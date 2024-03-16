@@ -73,7 +73,7 @@ var marker8pop = `<b>9113:</b><br>
 Много малка.
 Няма място.
 Наистина много малка.
-<img src="roomImg/9113.jpg" class="popup-image">
+<img src="static/roomImg/9113.jpg" class="popup-image">
 `
 marker8.bindPopup(marker8pop + markerStyle);
 

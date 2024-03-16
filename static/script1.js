@@ -41,7 +41,7 @@ marker2.bindTooltip("Teacher's Room");
 var marker2pop = `<b>Учителска стая:</b><br>
 Не ти се иска да ходиш там.
 Вътре има ключ за всяка стая (прави каквото искаш с тази информация).
-<img src="roomImg/teachersRoom.jpg" class="popup-image  ">
+<img src="static/roomImg/teachersRoom.jpg" class="popup-image  ">
 `
 
 marker2.bindPopup(marker2pop + markerStyle);
@@ -62,7 +62,7 @@ var marker4pop = `<b>9205:</b><br>
 Нещо като зала за лекции.
 Главно за контролни по градивни елементи.
 На почти всеки чин има рисунки от ученици за ученици.
-<img src="roomImg/9205.jpg" class="popup-image">
+<img src="static/roomImg/9205.jpg" class="popup-image">
 `
 marker4.bindPopup(marker4pop + markerStyle);
 
@@ -82,7 +82,7 @@ var marker5pop = `<b>9230:</b><br>
 Лявата редица е хубава, дясната не става.
 Вратата по някаква причина е най-отзад на стаята.
 Floor loot: JPG Le Beau, пречиствател на въздух, туба.
-<img src="roomImg/9230.jpg" class="popup-image">
+<img src="static/roomImg/9230.jpg" class="popup-image">
 `
 marker5.bindPopup(marker5pop + markerStyle);
 
@@ -100,7 +100,7 @@ marker6.bindTooltip("9221");
 var marker6pop = `
 <b>9221:</b><br> 
 Голяма е и само това.
-<img src="roomImg/9221.jpg" class="popup-image">
+<img src="static/roomImg/9221.jpg" class="popup-image">
 `
 
 marker6.bindPopup(marker6pop + markerStyle);
@@ -118,7 +118,7 @@ marker7.bindTooltip("9223");
 var marker7pop = `<b>9223:</b><br> 
 Голяма е.
 Като цяло става. 
-<img src="roomImg/9223.jpg" class="popup-image">
+<img src="static/roomImg/9223.jpg" class="popup-image">
 `
 
 marker7.bindPopup(marker7pop + markerStyle)
@@ -137,7 +137,7 @@ marker8.bindTooltip("9217");
 var marker8pop = `
 <b>9217:</b><br> 
 Поне е слънчево.
-<img src="roomImg/9217.jpg" class="popup-image">
+<img src="static/roomImg/9217.jpg" class="popup-image">
 `
 marker8.bindPopup(marker8pop + markerStyle);
 
@@ -157,7 +157,7 @@ var marker10pop = `<b>9224:</b><br>
 Компютърна зала.
 Има 14 лаптопа и може би има 14 мишки и зарядни. 
 Има мултимедия и в хубав ден ще работи.
-<img src="roomImg/9224.jpg" class="popup-image">
+<img src="static/roomImg/9224.jpg" class="popup-image">
 `
 
 marker10.bindPopup(marker10pop + markerStyle);
@@ -176,7 +176,7 @@ var marker11pop = `
 <b>9222:</b><br>
 Компютърна зала.
 Има около 14 лаптопа, но няма 14 мишки и зарядни.
-<img src="roomImg/9222.jpg" class="popup-image">
+<img src="static/roomImg/9222.jpg" class="popup-image">
 `
 marker11.bindPopup(marker11pop + markerStyle);
 //==========================================================================
@@ -192,7 +192,7 @@ marker12.bindTooltip("9218");
 
 var marker12pop = `<b>9218:</b><br> 
 Не е много добре.
-<img src="roomImg/9218.jpg" class="popup-image">
+<img src="static/roomImg/9218.jpg" class="popup-image">
 `
 
 marker12.bindPopup(marker12pop + markerStyle);
@@ -211,7 +211,7 @@ var marker13pop = `<b>9202</b><br>
 Голяма стая.
 Зелена е.
 Точно до учителската стая, за това не прави глупости.
-<img src="roomImg/9202.jpg" class="popup-image">
+<img src="static/roomImg/9202.jpg" class="popup-image">
 `
 marker13.bindPopup(marker13pop + markerStyle);
 
@@ -228,7 +228,7 @@ marker14.bindTooltip("Point of interest");
 
 var marker14pop = `<b>Random стълби в коридора:</b><br>
 Защо съществуват?
-<img src="roomImg/stairs.jpg" class="popup-image">
+<img src="static/roomImg/stairs.jpg" class="popup-image">
 `
 
 marker14.bindPopup(marker14pop + markerStyle);
@@ -246,7 +246,7 @@ marker15.bindTooltip("Point of interest");
 
 var marker15pop = `<b>Огледало на стълбите:</b><br>
 Едно от малкото огледала в сградата.
-<img src="roomImg/mirror.jpg" class="popup-image">
+<img src="static/roomImg/mirror.jpg" class="popup-image">
 `
 marker15.bindPopup(marker15pop + markerStyle);
 
@@ -264,7 +264,7 @@ marker16.bindTooltip("Point of interest");
 var marker16pop = `<b>Асансьор:</b><br>
 Никой не знае къде води.
 Може би не работи.
-<img src="roomImg/elevator.jpg" class="popup-image">
+<img src="static/roomImg/elevator.jpg" class="popup-image">
 `
 marker16.bindPopup(marker16pop + markerStyle);
 
@@ -283,7 +283,7 @@ var marker17pop = `<b>Тоалетна в коридора до 9230:</b><br>
 Трагична е.
 Няма брави на кабинките.
 Във втората кабинка има дупка в пода, водеща до void-а.
-<img src="roomImg/toilets9230.jpg" class="popup-image">
+<img src="static/roomImg/toilets9230.jpg" class="popup-image">
 `
 marker17.bindPopup(marker17pop + markerStyle);
 
@@ -300,11 +300,11 @@ marker18.bindTooltip("Toilet");
 
 var marker18pop = `<b>Тоалетна срещу 9222:</b><br>
 В кабинката има прозорец, от който може да ти се види всичко.
-<img src="roomImg/toilet9222.jpg" class="popup-image">
+<img src="static/roomImg/toilet9222.jpg" class="popup-image">
 `
 marker18.bindPopup(marker18pop + markerStyle);
 
 
 
-var osm = L.imageOverlay('devetiblok_vtori.png', [[57, -0.99], [50, 16]]);
+var osm = L.imageOverlay('static/devetiblok_vtori.png', [[57, -0.99], [50, 16]]);
 osm.addTo(map);
