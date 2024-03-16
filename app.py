@@ -1,5 +1,5 @@
-<<<<<<< HEAD
 from flask import Flask, render_template, request, redirect, url_for, session, flash
+from forms import LoginForm
 import sqlite3
 
 app = Flask(__name__, static_url_path='/static')
@@ -22,44 +22,37 @@ def add_user(username, password):
     conn.commit()
     conn.close()
 
-#@app.route('/')
-#def index():
-    #return redirect(url_for('login'))
 
-#@app.route('/login', methods=['GET', 'POST'])
-#def login():
-    #if request.method == 'POST':
-        #username = request.form['username']
-        #password = request.form['password']
-    #return render_template('login.html')
-
-#@app.route('/signuп', methods=['GET', 'POST'])
-#def register():
+@app.route('/')
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    form = LoginForm()
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-        add_user(username, password)
-        flash('Успешна регистрация!', 'success')
-        return redirect(url_for('login'))
-    return render_template('signup.html')
+    return render_template('login.html', form=form)
+
+#@app.route('/signuп', methods=['GET', 'POST'])
+#def register():
+    #if request.method == 'POST':
+        #username = request.form['username']
+        #password = request.form['password']
+        #add_user(username, password)
+        #flash('Успешна регистрация!', 'success')
+        #return redirect(url_for('login'))
+    #return render_template('signup.html')
 
 #@app.route("/home")
 #def index():
     #return render_template("index.html")
 
-@app.route('/')
-@app.route('/home')
-=======
-from flask import Flask, render_template
-
-app = Flask(__name__)
+#@app.route('/')
+#@app.route('/home')
 
 @app.route('/')
->>>>>>> 41248d365ab4a89359b8bd6b90fa90a4b259acc1
 def index():
-    return render_template('base.html', content='index.html')
+    return render_template('index.html')
 
-<<<<<<< HEAD
 @app.route("/block8")
 def block8_floors():
     return render_template("etazhiza8.html")
@@ -98,7 +91,7 @@ def daskalo():
 
 if __name__ == "__main__":
     app.run(debug=True)
-=======
+
 @app.route('/login')
 def login():
     return render_template('base.html', content='login.html')
@@ -113,4 +106,4 @@ def unauthorized():
 
 if __name__ == '__main__':
     app.run(debug=True)
->>>>>>> 41248d365ab4a89359b8bd6b90fa90a4b259acc1
+
