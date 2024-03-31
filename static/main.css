@@ -5,7 +5,7 @@ body {
     margin: 20px;
     padding: 0px;
     text-shadow: 2px 2px 41px #ccc7d6;
-    font-size: 90px;
+    font-size: 47px;
 }
 
 
@@ -20,7 +20,7 @@ h1 {
 }
 
 input[type="submit"] {
-    font-size: 70px;
+    font-size: 60px;
     color: rgb(243, 243, 243);
     background-color:transparent;
     border-radius: 10px;
@@ -36,7 +36,7 @@ input[type="submit"]:hover {
     box-shadow: 0 0 10px rgb(255, 255, 255); 
 }
 input[type="button"] {
-    font-size: 30px;
+    font-size: 20px;
     color: rgb(243, 243, 243);
     background-color:transparent;
     border:none;
@@ -62,7 +62,7 @@ input[type="button"]:hover {
 .footer a {
     color: rgb(255, 255, 255) !important; 
     text-decoration: none; 
-    font-size: 30px; 
+    font-size: 20px; 
     padding: 10px 20px; 
     margin: 0 10px; 
     cursor: pointer;
@@ -92,15 +92,16 @@ input[type="button"]:hover {
 }
 
 #map {
-    border-style: outset;
-    border-bottom-style: outset;
-  border-bottom-style: inset;
-  border-left-style: inset;
-  border-width: 20px;
+   
     position: static;
     left: 50px;
     width: 50vw;
     height: 50vh;
+    top: 50%;
+    left: 23%;
+    border: 10px solid transparent;
+    border-image: radial-gradient(circle, rgba(255, 255, 255, 0), rgb(59, 114, 196)) 1;
+    
 }
 .TUES{
     max-width: 250%;
