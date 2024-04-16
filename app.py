@@ -58,7 +58,7 @@ def login():
         if user:
             if bcrypt.check_password_hash(user.password, form.password.data):
                 login_user(user)
-                return redirect(url_for('index'))
+                return redirect(url_for('home'))
     return render_template('login.html', form=form)
 
 @app.route('/logout', methods=['GET', 'POST'])
@@ -81,9 +81,9 @@ def register():
 
     return render_template('register.html', form=form)
 
-@app.route('/home',  methods=['GET', 'POST'])
+@app.route('/home', methods=['GET', 'POST'])
 @login_required
-def index():
+def home():
     return render_template('index.html')
 
 @app.route("/block8")
