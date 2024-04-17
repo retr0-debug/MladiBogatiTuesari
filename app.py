@@ -11,7 +11,7 @@ bcrypt = Bcrypt(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
 app.config['SECRET_KEY'] = 'thisisasecretkey'
 db = SQLAlchemy()
-db.init_app(app)
+db.init_app(app)        
 
 with app.app_context():
     db.create_all()
